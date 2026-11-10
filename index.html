@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Cleanwearirl — footwear and bag cleaning and restoration in Tallaght, Dublin.">
+<title>Cleanwearirl | Footwear Cleaning & Restoration</title>
+<style>
+:root{--ink:#101114;--paper:#f7f7f4;--lime:#c9ff45;--violet:#7357ff;--orange:#ff7048;--line:#e5e5df}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}a{color:inherit}
+.top{background:var(--ink);color:#fff;text-align:center;padding:9px;font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+nav{position:sticky;top:0;z-index:9;background:#f7f7f4ee;border-bottom:1px solid var(--line)}
+.nav{max-width:1180px;margin:auto;padding:18px 24px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:22px;font-weight:900;letter-spacing:-.04em;text-decoration:none}.logo span{background:var(--lime);padding:3px 7px;border-radius:7px;margin-left:4px}
+.links{display:flex;gap:22px;font-weight:700;font-size:14px}.links a{text-decoration:none}.links .cta{background:var(--ink);color:#fff;padding:11px 16px;border-radius:99px}
+.hero{max-width:1180px;margin:auto;padding:65px 24px 90px;display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center}
+.kicker{font-weight:900;text-transform:uppercase;letter-spacing:.13em;font-size:12px;color:#5d3ce8}
+h1{font-size:clamp(55px,8vw,105px);line-height:.88;letter-spacing:-.075em;margin:15px 0 28px}
+.hero p{font-size:20px;line-height:1.55;color:#45484e}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;text-decoration:none;padding:15px 21px;border-radius:99px;font-weight:900}.dark{background:var(--ink);color:#fff}.lime{background:var(--lime)}
+.visual{height:520px;border-radius:38px;background:linear-gradient(145deg,#dfff77,#a89aff 52%,#ff8b67);position:relative;overflow:hidden;box-shadow:0 25px 60px #0002}
+.visual:before{content:"";position:absolute;width:430px;height:430px;border-radius:50%;background:#fff7;right:-120px;top:-110px}
+.shoe{position:absolute;left:13%;bottom:16%;width:70%;height:39%;background:#fff;border-radius:28% 58% 16% 16%;transform:rotate(-9deg);box-shadow:0 28px 30px #0003}
+.shoe:before{content:"";position:absolute;left:11%;top:-28%;width:58%;height:58%;background:#16171a;border-radius:55% 65% 20% 25%}
+.shoe:after{content:"";position:absolute;right:5%;bottom:4%;width:35%;height:16%;background:#ecece7;border-radius:0 0 25px 25px}
+.badge{position:absolute;left:25px;bottom:25px;background:var(--ink);color:#fff;border-radius:18px;padding:15px;font-weight:800}
+section{padding:90px 24px}.wrap{max-width:1180px;margin:auto}.head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:35px}
+h2{font-size:clamp(40px,5vw,68px);line-height:.95;letter-spacing:-.06em;margin:0}.lead{max-width:520px;color:#6f737b;font-size:18px;line-height:1.55}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:26px;padding:28px;min-height:245px}.num{font-size:12px;font-weight:900;color:#6b50ee}.card h3{font-size:26px;margin:45px 0 12px}.card p{color:#6f737b;line-height:1.55}
+.darksec{background:var(--ink);color:#fff}.darksec .lead{color:#b8bac0}.process{display:grid;grid-template-columns:1fr 1fr;gap:18px}.process .card{background:#18191c;border-color:#303137}
+.gallery{display:grid;grid-template-columns:1.25fr .75fr .75fr;grid-auto-rows:250px;gap:16px}.tile{border-radius:28px;position:relative;overflow:hidden}.big{grid-row:span 2}
+.t1{background:linear-gradient(135deg,#111 0 48%,#b5ff39 48%)}.t2{background:linear-gradient(145deg,#7458ff,#d7cfff)}.t3{background:linear-gradient(145deg,#ff7048,#ffb83d)}.t4{background:linear-gradient(145deg,#e6ff84,#83d8ff)}.t5{background:linear-gradient(145deg,#111,#444)}
+.tile a{position:absolute;inset:0;text-decoration:none}.tile h3{color:#fff;font-size:30px;margin:22px;position:relative}.tile:after{content:"Instagram • @cleanwearirl";position:absolute;left:18px;bottom:18px;background:#fff;color:#111;padding:9px 12px;border-radius:99px;font-size:11px;font-weight:900}
+.reviews{display:grid;grid-template-columns:.8fr 1.2fr;gap:22px}.rating{background:var(--lime);border-radius:30px;padding:35px;display:flex;flex-direction:column;justify-content:center}.rating strong{font-size:76px;letter-spacing:-.07em}.stars{font-size:27px;letter-spacing:4px}
+.reviewbox{background:#fff;border:1px solid var(--line);border-radius:30px;padding:35px}.quote{font-size:27px;line-height:1.25;letter-spacing:-.03em}.note{color:#6f737b;line-height:1.6}
+.contact{background:linear-gradient(135deg,#7357ff,#a18cff);color:#fff}.contactbox{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.details{background:#fff;color:#111;border-radius:28px;padding:30px}.detail{padding:14px 0;border-bottom:1px solid #ddd}.detail:last-child{border:0}
+footer{background:#0b0c0e;color:#fff;padding:45px 24px}.foot{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}.small{color:#9ea0a6;line-height:1.6}
+@media(max-width:850px){.links{display:none}.hero,.process,.reviews,.contactbox{grid-template-columns:1fr}.visual{height:400px}.cards{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr;grid-auto-rows:210px}.big{grid-row:span 1}.head{display:block}.head .lead{margin-top:20px}}
+</style></head>
+<body>
+<div class="top">Tallaght • Dublin 24 | Footwear + Bag Cleaning & Restoration</div>
+<nav><div class="nav">
+<a class="logo" href="#home">CLEANWEAR<span>IRL</span></a>
+<div class="links"><a href="#services">Services</a><a href="#work">Our Work</a><a href="#reviews">Reviews</a><a class="cta" href="#contact">Get in touch</a></div>
+</div></nav>
+
+<section id="home"><div class="hero">
+<div><div class="kicker">Clean it. Restore it. Wear it again.</div>
+<h1>Give your favourite pair a second life.</h1>
+<p>Cleanwearirl specialises in footwear and bag cleaning and restoration from Tallaght, Dublin. Careful work, attention to detail and a finish you can be proud of.</p>
+<div class="buttons"><a class="btn dark" href="tel:+35312549205">Call Cleanwearirl</a><a class="btn lime" href="https://www.instagram.com/cleanwearirl/" target="_blank">See Instagram work ↗</a></div></div>
+<div class="visual"><div class="shoe"></div><div class="badge">FOOTWEAR • BAGS • RESTORATION</div></div>
+</div></section>
+
+<section id="services"><div class="wrap"><div class="head"><h2>Made for the pairs<br>you don't want to lose.</h2><p class="lead">Cleanwearirl offers footwear and bag cleaning and restoration, with years of experience and a focus on getting the best realistic result from each item.</p></div>
+<div class="cards">
+<div class="card"><div class="num">01 / CLEAN</div><h3>Deep footwear cleaning</h3><p>A proper refresh for trainers and footwear that have picked up everyday dirt, marks and wear.</p></div>
+<div class="card"><div class="num">02 / RESTORE</div><h3>Restoration work</h3><p>For footwear that needs more than a basic clean, restoration focuses on improving the overall finish.</p></div>
+<div class="card"><div class="num">03 / BAGS</div><h3>Bag cleaning</h3><p>Specialist care for bags, with the approach tailored to the material and condition.</p></div>
+</div></div></section>
+
+<section class="darksec"><div class="wrap"><div class="head"><h2>Less throwaway.<br>More wear again.</h2><p class="lead">A premium clean is about taking care of things people already own and love.</p></div>
+<div class="process">
+<div class="card"><div class="num">01</div><h3>Assess</h3><p>We look at the item and its condition before deciding what treatment makes sense.</p></div>
+<div class="card"><div class="num">02</div><h3>Clean</h3><p>Cleaning is approached with the material and finish of the item in mind.</p></div>
+<div class="card"><div class="num">03</div><h3>Restore</h3><p>Where appropriate, restoration goes beyond a standard clean to improve the finish.</p></div>
+<div class="card"><div class="num">04</div><h3>Return</h3><p>Your item comes back ready to be worn, enjoyed and looked after again.</p></div>
+</div></div></section>
+
+<section id="work"><div class="wrap"><div class="head"><h2>The work speaks<br>for itself.</h2><p class="lead">Instagram blocks reliable automated downloading of individual post photographs. These portfolio cards therefore link directly to the real @cleanwearirl profile instead of pretending generic photos are their work.</p></div>
+<div class="gallery">
+<div class="tile big t1"><a href="https://www.instagram.com/cleanwearirl/" target="_blank"><h3>Fresh pairs.<br>Proper care.</h3></a></div>
+<div class="tile t2"><a href="https://www.instagram.com/cleanwearirl/" target="_blank"><h3>Cleaning</h3></a></div>
+<div class="tile t3"><a href="https://www.instagram.com/cleanwearirl/" target="_blank"><h3>Restoration</h3></a></div>
+<div class="tile t4"><a href="https://www.instagram.com/cleanwearirl/" target="_blank"><h3>Before → After</h3></a></div>
+<div class="tile t5"><a href="https://www.instagram.com/cleanwearirl/" target="_blank"><h3>Latest work</h3></a></div>
+</div></div></section>
+
+<section id="reviews"><div class="wrap"><div class="head"><h2>Good shoes deserve<br>good reviews.</h2><p class="lead">Cleanwearirl is currently listed at 5.0★ from 19 reviews. Exact Instagram review wording has not been invented or altered here.</p></div>
+<div class="reviews"><div class="rating"><span class="stars">★★★★★</span><strong>5.0</strong><span>19 reviews currently listed</span></div>
+<div class="reviewbox"><p class="quote">Real work. Real customers. Real feedback.</p><p class="note">See the latest customer feedback, transformations and posts directly on Cleanwearirl's Instagram.</p><br><a class="btn dark" href="https://www.instagram.com/cleanwearirl/" target="_blank">Open @cleanwearirl ↗</a></div></div></div></section>
+
+<section id="contact" class="contact"><div class="wrap contactbox"><div><div class="kicker" style="color:#e9ff9a">Ready for a refresh?</div><h2>Bring the pair back into rotation.</h2><p style="font-size:20px;line-height:1.5">Ask Cleanwearirl about footwear or bag cleaning and restoration.</p></div>
+<div class="details">
+<div class="detail"><strong>📍 Workshop</strong><br>Unit 7, Brookfield Enterprise Centre, Brookfield Rd, Jobstown, Tallaght, Dublin 24, D24 H510</div>
+<div class="detail"><strong>☎ Phone</strong><br><a href="tel:+35312549205">01 254 9205</a></div>
+<div class="detail"><strong>✉ Email</strong><br><a href="mailto:cleanwearirl23@gmail.com">cleanwearirl23@gmail.com</a></div>
+<div class="detail"><strong>◎ Instagram</strong><br><a href="https://www.instagram.com/cleanwearirl/" target="_blank">@cleanwearirl</a></div>
+</div></div></section>
+<footer><div class="foot"><div><div class="logo" style="color:#fff">CLEANWEAR<span>IRL</span></div><p class="small">Footwear & bag cleaning • Restoration<br>Tallaght, Dublin</p></div><div class="small">© <span id="year"></span> Cleanwearirl<br>GitHub Pages ready.</div></div></footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear()</script>
+</body></html>
